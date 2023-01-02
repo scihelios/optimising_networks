@@ -441,7 +441,7 @@ btn3.place(relx=0.5, rely=0.9, anchor=CENTER)
 
 
 plt.show()
-print(list_of_loaded,list_of_lacking)
+
 
 
 
