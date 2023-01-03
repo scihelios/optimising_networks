@@ -199,7 +199,7 @@ def onclick(event):
 		i=aug[j]
 		if (debut_fin[-1][0]+i[0],debut_fin[-1][1]+i[1]) in graph[1] :
 			debut_fin[-1]=(debut_fin[-1][0]+i[0],debut_fin[-1][1]+i[1])
-		compt=1
+			compt=1
 		j+=1	
 	if identify==0:
 		list_of_loaded=debut_fin
