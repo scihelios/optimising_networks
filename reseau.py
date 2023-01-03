@@ -234,8 +234,8 @@ def link():
 	k=input('')
 	allpaths=[]
 	colone=0
-	for i in range(len(newgraph)):
-		for j in range(len(newgraph)):
+	for i in range(newgraph):
+		for j in range(newgraph):
 			a=newgraph[i]
 			b=newgraph[j]
 			if b in newgraph[a] and a<b:
