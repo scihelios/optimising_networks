@@ -246,15 +246,13 @@ def link():
 	newgraph=reconfigure_graph(preliminaire_set,list_of_allpoint,allpaths)		
 	
 	#x0 takes the result of optimising the efficiency in the etwork 
-	x0=optimise_transport(newgraph,list_of_values ,list_of_allpoint)[1]
+	x0=optimise_transport(newgraph,list_of_values ,list_of_allpoint)[0]
 	
 	allpaths=[] #we reset the paths to reorient them in the direction of transmission they actually experience (stays the same if x_i > 0)
 	index=0 #used to iterate through the list of values of each edge
 
-	for i in range(newgraph):
-		for j in range(newgraph):
-			a=newgraph[i]
-			b=newgraph[j]
+	for a in newgraph:
+		for b in newgraph:
 			if b in newgraph[a] and a<b:
 				if x0[index]<0:
 					allpaths+=[find_distance(graph,a,b)[0]]
