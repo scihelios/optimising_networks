@@ -17,14 +17,16 @@ from mpl_toolkits import mplot3d
 from shapely.geometry import Point, Polygon
 
 #initialize and declare global variable
-debut_fin=[]
-aug=[]
+debut_fin = []
+aug = []
 global surplus_list, insufficient_list
-surplus_list=[]
-insufficient_list=[]
+surplus_list = []
+insufficient_list = []
+
+
 for i in range(-10,11):
     for j in range(-10,11):
-    	aug+=[(i,j)]
+    	aug += [(i,j)]
 
 global compteur_reccurence
 compteur_reccurence=0
